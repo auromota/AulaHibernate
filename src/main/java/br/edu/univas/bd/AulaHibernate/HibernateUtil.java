@@ -10,7 +10,7 @@ public class HibernateUtil {
 
 	private static EntityManagerFactory buildSessionFactory() {
 		try {
-			return Persistence.createEntityManagerFactory("PERSISTENCE_CTX_NAME");
+			return Persistence.createEntityManagerFactory("PersistenceUnit");
 		} catch (Throwable e) {
 			System.err.println("Error creating EntityManagerFactory." + e);
 			throw new ExceptionInInitializerError(e);
